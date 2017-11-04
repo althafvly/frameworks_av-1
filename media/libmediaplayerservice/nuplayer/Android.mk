@@ -26,7 +26,7 @@ LOCAL_C_INCLUDES := \
 	frameworks/av/media/libmediaplayerservice              \
 	frameworks/native/include/media/openmax
 
-LOCAL_CFLAGS += -Werror -Wall
+LOCAL_CFLAGS += -Werror -Wno-unused-parameter -Wall
 
 # enable experiments only in userdebug and eng builds
 ifneq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
